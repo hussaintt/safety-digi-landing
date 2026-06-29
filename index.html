@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#16B39A" />
+    <title>Safety Digi — Safer Today, Sustainable Tomorrow | HSE Mobile App</title>
+    <meta name="description"
+        content="Safety Digi is the all-in-one mobile app for recording, tracking, and reporting Health, Safety & Environment (HSE) activities — observations, inspections, incidents and reports — with photo evidence and auto-generated PDFs." />
+    <meta name="keywords"
+        content="HSE app, Safety app, EHS, Inspection app, Incident reporting, Observation app, PPE checklist, Tool Box Talk, Safety Digi" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Safety Digi — Safer Today, Sustainable Tomorrow" />
+    <meta property="og:description"
+        content="The all-in-one HSE mobile app for industrial & construction sites. Observations, inspections, daily reports, incidents — all with photo evidence." />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="icon" href="favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+
+<body>
+
+    <!-- =========================== NAVBAR =========================== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="logo" aria-label="Safety Digi">
+                <span class="logo-mark">
+                    <img src="favicon/favicon.svg" alt="" width="42" height="42" />
+                </span>
+                <span class="logo-text">
+                    <span data-i18n="logo.text"><strong>Safety</strong><span>Digi</span></span>
+                    <small class="logo-sub" data-i18n="logo.sub">SAFETY · COMPLIANCE · CARE</small>
+                </span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active" data-i18n="nav.home">Home</a>
+                <a href="#pillars" data-i18n="nav.features">Features</a>
+                <a href="#modules" data-i18n="nav.modules">Modules</a>
+                <a href="#download" data-i18n="nav.pricing">Pricing</a>
+                <a href="#screens" data-i18n="nav.resources">Resources</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+                <a href="#download" class="btn btn-primary btn-sm nav-demo-mobile" data-i18n="nav.demo">Request Demo</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#download" class="btn btn-primary btn-sm nav-demo" data-i18n="nav.demo">Request Demo</a>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-active">EN</span>
+                    <span class="lang-divider">/</span>
+                    <span class="lang-other">AR</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================== HERO =========================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-inner">
+            <div class="hero-copy">
+                <span class="eyebrow" data-i18n="hero.eyebrow">Smarter Safety. Stronger Workplaces.</span>
+                <h1 data-i18n="hero.title">All-in-One HSE Management App</h1>
+                <p class="hero-sub" data-i18n="hero.sub">
+                    Empower your teams to work safer, report faster and stay compliant — anywhere, anytime.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#download" class="btn btn-primary btn-lg">
+                        <span data-i18n="hero.ctaDemo">Request Demo</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14" />
+                            <path d="m13 5 7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#modules" class="btn btn-outline btn-lg">
+                        <span data-i18n="hero.ctaExplore">Explore Features</span>
+                    </a>
+                </div>
+
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <span class="meta-ico">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2 L20 5 V11 C20 16 16.5 19.5 12 21 C7.5 19.5 4 16 4 11 V5 Z" />
+                                <path d="M9 12 l2 2 l4-4" />
+                            </svg>
+                        </span>
+                        <span class="meta-text">
+                            <strong data-i18n="hero.f1t">Improve Safety</strong>
+                            <span data-i18n="hero.f1d">Reduce incidents and risks</span>
+                        </span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-ico">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 11l3 3L22 4" />
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                            </svg>
+                        </span>
+                        <span class="meta-text">
+                            <strong data-i18n="hero.f2t">Ensure Compliance</strong>
+                            <span data-i18n="hero.f2d">Stay aligned with standards</span>
+                        </span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-ico">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3v18h18" />
+                                <path d="M7 14l4-4 3 3 5-6" />
+                            </svg>
+                        </span>
+                        <span class="meta-text">
+                            <strong data-i18n="hero.f3t">Real-time Insights</strong>
+                            <span data-i18n="hero.f3d">Make data-driven decisions</span>
+                        </span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-ico">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="7" r="3" />
+                                <circle cx="17" cy="9" r="2.5" />
+                                <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+                                <path d="M15 20c0-2.2 1.3-4 3-4" />
+                            </svg>
+                        </span>
+                        <span class="meta-text">
+                            <strong data-i18n="hero.f4t">Empower Teams</strong>
+                            <span data-i18n="hero.f4d">Engage and protect your workforce</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone mockup -->
+            <div class="hero-phone">
+                <div class="phone-blob-wrapper" aria-hidden="true">
+                    <span class="phone-blob"></span>
+                </div>
+                <div class="phone-frame"><span class="side-btn left" style="top:18%;height:14%"></span><span
+                        class="side-btn left" style="top:36%;height:10%"></span><span class="side-btn left"
+                        style="top:50%;height:18%"></span><span class="side-btn right"
+                        style="top:24%;height:22%"></span><span class="island"></span><span class="glare"></span><img
+                        class="phone-shot" src="main-hero.png" width="941" height="1972"
+                        alt="Safety Digi dashboard — daily overview, quick actions and HSE statistics"
+                        fetchpriority="high" /></div>
+
+                <!-- Floating stat cards -->
+                <div class="float-card fc-1">
+                    <div class="fc-ico fc-ico-green">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2 L20 5 V11 C20 16 16.5 19.5 12 21 C7.5 19.5 4 16 4 11 V5 Z" />
+                            <path d="M9 12 l2 2 l4-4" />
+                        </svg>
+                    </div>
+                    <div class="fc-body">
+                        <div class="fc-num" data-i18n="float.c1t">98%</div>
+                        <div class="fc-lbl" data-i18n="float.c1s">Compliance Rate</div>
+                        <svg class="fc-chart" viewBox="0 0 60 16" width="60" height="16" aria-hidden="true">
+                            <polyline points="0,12 8,10 16,11 24,7 32,8 40,4 48,5 56,2" fill="none" stroke="#16B39A"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="float-card fc-2">
+                    <div class="fc-ico fc-ico-purple">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18" />
+                            <rect x="7" y="11" width="3" height="7" />
+                            <rect x="12" y="7" width="3" height="11" />
+                            <rect x="17" y="13" width="3" height="5" />
+                        </svg>
+                    </div>
+                    <div class="fc-body">
+                        <div class="fc-num" data-i18n="float.c2t">1,248</div>
+                        <div class="fc-lbl" data-i18n="float.c2s">Inspections This Month</div>
+                        <svg class="fc-chart" viewBox="0 0 60 16" width="60" height="16" aria-hidden="true">
+                            <polyline points="0,11 8,12 16,8 24,9 32,5 40,7 48,3 56,4" fill="none" stroke="#7B4DFF"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="float-card fc-3">
+                    <div class="fc-ico fc-ico-blue">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="7" r="3.2" />
+                            <path d="M3.5 20c0-3 2.5-5.5 5.5-5.5S14.5 17 14.5 20" />
+                            <circle cx="17.5" cy="8.5" r="2.4" />
+                            <path d="M16 20c0-2.4 1.5-4.3 3.5-4.3" />
+                        </svg>
+                    </div>
+                    <div class="fc-body">
+                        <div class="fc-num" data-i18n="float.c3t">2,345</div>
+                        <div class="fc-lbl" data-i18n="float.c3s">Active Users</div>
+                        <svg class="fc-chart" viewBox="0 0 60 16" width="60" height="16" aria-hidden="true">
+                            <polyline points="0,13 8,11 16,9 24,10 32,7 40,6 48,4 56,3" fill="none" stroke="#3B82F6"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="float-card fc-4">
+                    <div class="fc-ico fc-ico-amber">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3 2 21h20z" />
+                            <path d="M12 10v5" />
+                            <path d="M12 18v.5" />
+                        </svg>
+                    </div>
+                    <div class="fc-body">
+                        <div class="fc-num" data-i18n="float.c4t">23</div>
+                        <div class="fc-lbl" data-i18n="float.c4s">Open Incidents</div>
+                        <svg class="fc-chart" viewBox="0 0 60 16" width="60" height="16" aria-hidden="true">
+                            <polyline points="0,4 8,5 16,3 24,6 32,5 40,8 48,7 56,9" fill="none" stroke="#F59E0B"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== FEATURES STRIP =========================== -->
+    <section class="features-strip">
+        <div class="container">
+            <h3 class="fs-title" data-i18n="fs.title">Everything You Need in One App</h3>
+            <div class="features-grid">
+                <a href="#pillars" class="fs-card fs-safety">
+                    <span class="fs-ico" style="display:flex; align-items:center; justify-content:center;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2 L20 5 V11 C20 16 16.5 19.5 12 21 C7.5 19.5 4 16 4 11 V5 Z" />
+                            <path d="M9 12 l2 2 l4-4" />
+                        </svg>
+                    </span>
+                    <div>
+                        <strong data-i18n="fs.s1.t">Safety</strong>
+                        <span data-i18n="fs.s1.d">Observations, Inspections, Permits &amp; More</span>
+                    </div>
+                </a>
+
+                <a href="#modules" class="fs-card fs-reports">
+                    <span class="fs-ico" style="display:flex; align-items:center; justify-content:center;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="12" width="3" height="9" />
+                            <rect x="11" y="7" width="3" height="14" />
+                            <rect x="17" y="3" width="3" height="18" />
+                            <path d="M3 3v18h18" />
+                        </svg>
+                    </span>
+                    <div>
+                        <strong data-i18n="fs.s2.t">Reports</strong>
+                        <span data-i18n="fs.s2.d">Powerful reports and analytics</span>
+                    </div>
+                </a>
+
+                <a href="#pillars" class="fs-card fs-assets">
+                    <span class="fs-ico" style="display:flex; align-items:center; justify-content:center;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s-7-7.5-7-13a7 7 0 0 1 14 0c0 5.5-7 13-7 13z" />
+                            <circle cx="12" cy="9" r="2.5" />
+                        </svg>
+                    </span>
+                    <div>
+                        <strong data-i18n="fs.s3.t">Assets &amp; Locations</strong>
+                        <span data-i18n="fs.s3.d">Track assets, sites and locations</span>
+                    </div>
+                </a>
+
+                <a href="#modules" class="fs-card fs-alerts">
+                    <span class="fs-ico" style="display:flex; align-items:center; justify-content:center;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9z" />
+                            <path d="M10 21a2 2 0 0 0 4 0" />
+                        </svg>
+                    </span>
+                    <div>
+                        <strong data-i18n="fs.s4.t">Alerts</strong>
+                        <span data-i18n="fs.s4.d">Real-time alerts and notifications</span>
+                    </div>
+                </a>
+
+                <a href="#modules" class="fs-card fs-incident">
+                    <span class="fs-ico" style="display:flex; align-items:center; justify-content:center;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3 2 21h20z" />
+                            <path d="M12 10v5" />
+                            <path d="M12 18v.5" />
+                        </svg>
+                    </span>
+                    <div>
+                        <strong data-i18n="fs.s5.t">Incident Management</strong>
+                        <span data-i18n="fs.s5.d">Report, track and resolve incidents fast</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== INDUSTRY BAND =========================== -->
+    <section class="industry-band">
+        <div class="container ib-inner">
+            <div class="ib-intro">
+                <span class="ib-badge" aria-hidden="true">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2 L20 5 V11 C20 16 16.5 19.5 12 21 C7.5 19.5 4 16 4 11 V5 Z" />
+                        <path d="M9 12 l2 2 l4-4" />
+                    </svg>
+                </span>
+                <div class="ib-text">
+                    <strong data-i18n="band.title">Built for Every Industry</strong>
+                    <span data-i18n="band.sub">Construction, Manufacturing, Oil &amp; Gas, Logistics, Healthcare and
+                        more.</span>
+                </div>
+            </div>
+            <div class="ib-logos" aria-label="Trusted by leading organizations">
+                <span class="ib-logo lg-aramco">aramco</span>
+                <span class="ib-logo lg-total">TotalEnergies</span>
+                <span class="ib-logo lg-siemens">SIEMENS</span>
+                <span class="ib-logo lg-slb">Schlumberger</span>
+                <span class="ib-logo lg-nbk">NBK</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== PILLARS =========================== -->
+    <section class="section pillars" id="pillars">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="pillars.eyebrow">Our Four Pillars</span>
+                <h2 data-i18n="pillars.title">Built around what matters most on site.</h2>
+                <p data-i18n="pillars.sub">Every screen, every workflow and every report in Safety Digi is shaped by
+                    these four pillars — so nothing gets missed in the field.</p>
+            </div>
+
+            <div class="pillar-grid">
+                <div class="pillar-card pc-safety">
+                    <div class="pc-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2 L22 6 V12 C22 17 17 21 12 22 C7 21 2 17 2 12 V6 Z" />
+                            <path d="M9 12 L11 14 L15 10" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="pillars.s.title">Safety</h3>
+                    <p data-i18n="pillars.s.desc">Standardize incident reporting, near-miss capture and corrective
+                        actions. Auto-generate shareable PDF reports the moment an event is logged.</p>
+                </div>
+
+                <div class="pillar-card pc-health">
+                    <div class="pc-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="pillars.h.title">Health</h3>
+                    <p data-i18n="pillars.h.desc">Track injuries, medical services and lost working days. Capture LTI
+                        data with structured forms so health trends surface instantly.</p>
+                </div>
+
+                <div class="pillar-card pc-env">
+                    <div class="pc-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M2 22 C8 18 8 12 12 6 C16 12 16 18 22 22 Z" />
+                            <path d="M12 2 V8" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="pillars.e.title">Environment</h3>
+                    <p data-i18n="pillars.e.desc">Log environmental incidents and inspections with photo evidence. Spot
+                        patterns early and keep sustainability on the daily agenda.</p>
+                </div>
+
+                <div class="pillar-card pc-people">
+                    <div class="pc-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="9" cy="8" r="3" />
+                            <circle cx="17" cy="9" r="2.5" />
+                            <path d="M3 20 C3 16 6 14 9 14 C12 14 15 16 15 20" />
+                            <path d="M15 20 C15 17 17 15 19 15 C20.5 15 21 16 21 17" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="pillars.p.title">People</h3>
+                    <p data-i18n="pillars.p.desc">From daily Toolbox Talks to manpower and manhour tracking — give every
+                        worker on site a voice and a record.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== MODULES =========================== -->
+    <section class="section modules" id="modules">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="modules.eyebrow">Four Core Modules</span>
+                <h2 data-i18n="modules.title">One app. Every HSE workflow.</h2>
+                <p data-i18n="modules.sub">From the moment a worker spots something on site to the monthly report on the
+                    manager's desk — Safety Digi covers it.</p>
+            </div>
+
+            <div class="module-tabs" role="tablist">
+                <button class="mtab active" data-target="m-obs">
+                    <span class="mtab-ico" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="7" />
+                            <path d="m20 20-3.5-3.5" />
+                        </svg>
+                    </span>
+                    <span data-i18n="modules.m1.name">Observation</span>
+                </button>
+                <button class="mtab" data-target="m-ins">
+                    <span class="mtab-ico" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="3" width="14" height="18" rx="2" />
+                            <path d="M9 8h6" />
+                            <path d="M9 12h6" />
+                            <path d="M9 16h4" />
+                            <path d="M9 6h2" />
+                        </svg>
+                    </span>
+                    <span data-i18n="modules.m2.name">Inspection</span>
+                </button>
+                <button class="mtab" data-target="m-rep">
+                    <span class="mtab-ico" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" />
+                            <path d="M14 3v5h5" />
+                            <path d="M9 13h6" />
+                            <path d="M9 17h4" />
+                        </svg>
+                    </span>
+                    <span data-i18n="modules.m3.name">Reports</span>
+                </button>
+                <button class="mtab" data-target="m-stat">
+                    <span class="mtab-ico" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18" />
+                            <rect x="7" y="12" width="3" height="6" />
+                            <rect x="12" y="8" width="3" height="10" />
+                            <rect x="17" y="14" width="3" height="4" />
+                        </svg>
+                    </span>
+                    <span data-i18n="modules.m4.name">Monthly Stats</span>
+                </button>
+            </div>
+
+            <!-- OBSERVATION -->
+            <div class="module-panel active" id="m-obs">
+                <div class="mp-copy">
+                    <span class="mp-tag" data-i18n="modules.m1.tag">Module 01</span>
+                    <h3 data-i18n="modules.m1.title">Observation</h3>
+                    <p data-i18n="modules.m1.desc">Log a safety observation in seconds — type, place, category, time to
+                        close, responsible person — and let supervisors track close-outs through history and trend
+                        stats.</p>
+                    <ul class="mp-list">
+                        <li data-i18n="modules.m1.f1">Quick dropdown-driven form (Type / Place / Category / Responsible)
+                        </li>
+                        <li data-i18n="modules.m1.f2">Photo evidence on every record</li>
+                        <li data-i18n="modules.m1.f3">Sortable history per author</li>
+                        <li data-i18n="modules.m1.f4">Stats: Negative, Positive, Closed + Trend</li>
+                    </ul>
+                </div>
+                <div class="mp-visual">
+                    <div class="phone-frame"><span class="side-btn left" style="top:18%;height:14%"></span><span
+                            class="side-btn left" style="top:36%;height:10%"></span><span class="side-btn left"
+                            style="top:50%;height:18%"></span><span class="side-btn right"
+                            style="top:24%;height:22%"></span><span class="island"></span><span
+                            class="glare"></span><img class="phone-shot" src="observation.png" width="941" height="1672"
+                            loading="lazy" decoding="async"
+                            alt="New Observation form — type, place, category, responsible person and time" /></div>
+                </div>
+            </div>
+
+            <!-- INSPECTION -->
+            <div class="module-panel" id="m-ins">
+                <div class="mp-copy">
+                    <span class="mp-tag" data-i18n="modules.m2.tag">Module 02</span>
+                    <h3 data-i18n="modules.m2.title">Inspection</h3>
+                    <p data-i18n="modules.m2.desc">Six structured inspection types, each with a tailored Yes / No / N/A
+                        checklist, an "Other (specify)" field and photo attach — built for gloves, outdoors, and
+                        one-handed use.</p>
+                    <div class="chip-row">
+                        <span class="chip">
+                            <svg class="chip-ico" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 0 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1A2 2 0 1 1 4.3 17l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 0 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 0 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" />
+                            </svg>
+                            <span data-i18n="modules.m2.c1">Equipment</span>
+                        </span>
+                        <span class="chip">
+                            <svg class="chip-ico" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M12 3 4 7v5c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V7z" />
+                                <path d="M9 12h6" />
+                                <path d="M12 9v6" />
+                            </svg>
+                            <span data-i18n="modules.m2.c2">PPE</span>
+                        </span>
+                        <span class="chip">
+                            <svg class="chip-ico" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M3 20h18" />
+                                <path d="M5 20V8l4-3" />
+                                <path d="M11 20V8l-2-3" />
+                                <path d="M9 5h6" />
+                                <path d="M13 20V8l4-3" />
+                                <path d="M19 20V8l-2-3" />
+                            </svg>
+                            <span data-i18n="modules.m2.c3">Scaffold</span>
+                        </span>
+                        <span class="chip">
+                            <svg class="chip-ico" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M12 22V12" />
+                                <path d="M12 12C9 8 7 5 7 3c0 4 2 7 5 9z" />
+                                <path d="M12 12c3-4 5-7 5-9 0 4-2 7-5 9z" />
+                            </svg>
+                            <span data-i18n="modules.m2.c4">Environmental</span>
+                        </span>
+                        <span class="chip">
+                            <svg class="chip-ico" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M12 3c-3 5-5 8-5 11a5 5 0 0 0 10 0c0-3-2-6-5-11z" />
+                                <path d="M9 14h6" />
+                            </svg>
+                            <span data-i18n="modules.m2.c5">Fire</span>
+                        </span>
+                        <span class="chip">
+                            <svg class="chip-ico" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M3 3v18h18" />
+                                <path d="M7 16l4-4 3 3 5-7" />
+                            </svg>
+                            <span data-i18n="modules.m2.c6">SMS Audit <small>(Phase 2)</small></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="mp-visual">
+                    <div class="phone-frame"><span class="side-btn left" style="top:18%;height:14%"></span><span
+                            class="side-btn left" style="top:36%;height:10%"></span><span class="side-btn left"
+                            style="top:50%;height:18%"></span><span class="side-btn right"
+                            style="top:24%;height:22%"></span><span class="island"></span><span
+                            class="glare"></span><img class="phone-shot" src="inspection.png" width="941" height="1672"
+                            loading="lazy" decoding="async"
+                            alt="Equipment inspection checklist with Yes / No / N/A items and photo attach" /></div>
+                </div>
+            </div>
+
+            <!-- REPORTS -->
+            <div class="module-panel" id="m-rep">
+                <div class="mp-copy">
+                    <span class="mp-tag" data-i18n="modules.m3.tag">Module 03</span>
+                    <h3 data-i18n="modules.m3.title">Reports</h3>
+                    <p data-i18n="modules.m3.desc">Daily reports capture manpower, manhours, TBTs and Permit-to-Work
+                        status. Once <strong>26 daily reports</strong> land, the <strong>Monthly Report
+                            auto-builds</strong>. Incident reports export to <strong>PDF</strong> in a single tap.</p>
+                    <ul class="mp-list">
+                        <li data-i18n="modules.m3.f1"><strong>Daily</strong> — Manpower · Manhour · TBT · Attendees ·
+                            PWO Pending</li>
+                        <li data-i18n="modules.m3.f2"><strong>Monthly</strong> — auto-calculated from 26 daily reports
+                        </li>
+                        <li data-i18n="modules.m3.f3"><strong>Incident</strong> — Near miss · Accident · Environmental ·
+                            LTI</li>
+                        <li data-i18n="modules.m3.f4">PDF export ready to share with stakeholders</li>
+                    </ul>
+                </div>
+                <div class="mp-visual">
+                    <div class="phone-frame"><span class="side-btn left" style="top:18%;height:14%"></span><span
+                            class="side-btn left" style="top:36%;height:10%"></span><span class="side-btn left"
+                            style="top:50%;height:18%"></span><span class="side-btn right"
+                            style="top:24%;height:22%"></span><span class="island"></span><span
+                            class="glare"></span><img class="phone-shot" src="reports.png" width="941" height="1672"
+                            loading="lazy" decoding="async"
+                            alt="Reports screen — daily, monthly and incident report types with PDF export" /></div>
+                </div>
+            </div>
+
+            <!-- MONTHLY STATS -->
+            <div class="module-panel" id="m-stat">
+                <div class="mp-copy">
+                    <span class="mp-tag" data-i18n="modules.m4.tag">Module 04</span>
+                    <h3 data-i18n="modules.m4.title">Monthly Stats</h3>
+                    <p data-i18n="modules.m4.desc">A management-grade performance view — aggregated HSE metrics that
+                        turn 26 days of daily field activity into clear, comparable monthly numbers.</p>
+                    <ul class="mp-list">
+                        <li data-i18n="modules.m4.f1">Observation trend over time</li>
+                        <li data-i18n="modules.m4.f2">Open vs Closed vs Incident counts</li>
+                        <li data-i18n="modules.m4.f3">TBT, Manhour and PWO rollups</li>
+                        <li data-i18n="modules.m4.f4">Drill down by site, area or role</li>
+                    </ul>
+                </div>
+                <div class="mp-visual">
+                    <div class="phone-frame"><span class="side-btn left" style="top:18%;height:14%"></span><span
+                            class="side-btn left" style="top:36%;height:10%"></span><span class="side-btn left"
+                            style="top:50%;height:18%"></span><span class="side-btn right"
+                            style="top:24%;height:22%"></span><span class="island"></span><span
+                            class="glare"></span><img class="phone-shot" src="monthly.png" width="941" height="1672"
+                            loading="lazy" decoding="async"
+                            alt="Monthly stats — observation trend chart, closed rate and breakdown by type" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== SCREENS / SHOWCASE =========================== -->
+    <section class="section screens" id="screens">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="screens.eyebrow">App Screens</span>
+                <h2 data-i18n="screens.title">A glimpse inside Safety Digi.</h2>
+                <p data-i18n="screens.sub">Phone-first layouts, large tap targets, minimal typing. Designed for the
+                    field — gloves, sunlight and one hand.</p>
+            </div>
+
+            <div class="screens-strip">
+                <div class="phone-frame"><span class="side-btn left" style="top:18%;height:14%"></span><span
+                        class="side-btn left" style="top:36%;height:10%"></span><span class="side-btn left"
+                        style="top:50%;height:18%"></span><span class="side-btn right"
+                        style="top:24%;height:22%"></span><span class="island"></span><span class="glare"></span><img
+                        class="phone-shot" src="screen-1.png" width="941" height="1672" loading="lazy" decoding="async"
+                        alt="Welcome screen — quick access to Safety, Health, Environment and People" /></div>
+
+                <div class="phone-frame"><span class="side-btn left" style="top:18%;height:14%"></span><span
+                        class="side-btn left" style="top:36%;height:10%"></span><span class="side-btn left"
+                        style="top:50%;height:18%"></span><span class="side-btn right"
+                        style="top:24%;height:22%"></span><span class="island"></span><span class="glare"></span><img
+                        class="phone-shot" src="screen-2.png" width="941" height="1672" loading="lazy" decoding="async"
+                        alt="Login screen with single sign-on" /></div>
+
+                <div class="phone-frame"><span class="side-btn left" style="top:18%;height:14%"></span><span
+                        class="side-btn left" style="top:36%;height:10%"></span><span class="side-btn left"
+                        style="top:50%;height:18%"></span><span class="side-btn right"
+                        style="top:24%;height:22%"></span><span class="island"></span><span class="glare"></span><img
+                        class="phone-shot" src="screen-3.png" width="941" height="1672" loading="lazy" decoding="async"
+                        alt="Modules home — Observation, Inspection, Reports and Monthly Stats" /></div>
+
+                <div class="phone-frame"><span class="side-btn left" style="top:18%;height:14%"></span><span
+                        class="side-btn left" style="top:36%;height:10%"></span><span class="side-btn left"
+                        style="top:50%;height:18%"></span><span class="side-btn right"
+                        style="top:24%;height:22%"></span><span class="island"></span><span class="glare"></span><img
+                        class="phone-shot" src="screen-4.png" width="941" height="1672" loading="lazy" decoding="async"
+                        alt="Incident type selection — Near miss, Accident, Environmental and LTI" /></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== WORKFLOW =========================== -->
+    <section class="section workflow" id="workflow">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="wf.eyebrow">How It Works</span>
+                <h2 data-i18n="wf.title">From field observation to monthly report — in four steps.</h2>
+            </div>
+
+            <div class="flow">
+                <div class="flow-step">
+                    <div class="flow-num">01</div>
+                    <h4 data-i18n="wf.s1.t">Capture</h4>
+                    <p data-i18n="wf.s1.d">Field worker taps the center camera button or opens a module. Picklists +
+                        photo evidence — minimal typing.</p>
+                </div>
+                <div class="flow-arrow"></div>
+                <div class="flow-step">
+                    <div class="flow-num">02</div>
+                    <h4 data-i18n="wf.s2.t">Submit</h4>
+                    <p data-i18n="wf.s2.d">Each record is stamped with Author, Date/Time and Level — automatically
+                        routed to the right supervisor.</p>
+                </div>
+                <div class="flow-arrow"></div>
+                <div class="flow-step">
+                    <div class="flow-num">03</div>
+                    <h4 data-i18n="wf.s3.t">Track</h4>
+                    <p data-i18n="wf.s3.d">Open vs Closed, Positive vs Negative, trends by week. Corrective actions stay
+                        visible until confirmed.</p>
+                </div>
+                <div class="flow-arrow"></div>
+                <div class="flow-step">
+                    <div class="flow-num">04</div>
+                    <h4 data-i18n="wf.s4.t">Report</h4>
+                    <p data-i18n="wf.s4.d">26 daily reports auto-roll into a monthly report. Incident PDFs are one tap
+                        away.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== ROLES =========================== -->
+    <section class="section roles" id="roles">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="roles.eyebrow">Access Levels</span>
+                <h2 data-i18n="roles.title">Three levels. One source of truth.</h2>
+                <p data-i18n="roles.sub">Every screen shows the user's Level in the header — clear, traceable,
+                    accountable.</p>
+            </div>
+
+            <div class="roles-grid">
+                <div class="role-card r-user">
+                    <span class="role-tag" data-i18n="roles.r1.t">User</span>
+                    <h4 data-i18n="roles.r1.title">Field Worker · Inspector</h4>
+                    <ul>
+                        <li data-i18n="roles.r1.l1">Create observations, inspections & daily reports</li>
+                        <li data-i18n="roles.r1.l2">Attach photos on every record</li>
+                        <li data-i18n="roles.r1.l3">View own history</li>
+                    </ul>
+                </div>
+
+                <div class="role-card r-admin highlight">
+                    <span class="role-tag" data-i18n="roles.r2.t">Admin</span>
+                    <h4 data-i18n="roles.r2.title">Site · HSE Supervisor</h4>
+                    <ul>
+                        <li data-i18n="roles.r2.l1">Everything a User can do</li>
+                        <li data-i18n="roles.r2.l2">View all records and stats across the site</li>
+                        <li data-i18n="roles.r2.l3">Manage incidents & corrective actions</li>
+                    </ul>
+                </div>
+
+                <div class="role-card r-super">
+                    <span class="role-tag" data-i18n="roles.r3.t">Super Admin</span>
+                    <h4 data-i18n="roles.r3.title">HSE Manager · System Owner</h4>
+                    <ul>
+                        <li data-i18n="roles.r3.l1">Everything an Admin can do</li>
+                        <li data-i18n="roles.r3.l2">User management & configuration</li>
+                        <li data-i18n="roles.r3.l3">Multi-site visibility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== INDUSTRIES =========================== -->
+    <section class="section industries">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="ind.eyebrow">Built For</span>
+                <h2 data-i18n="ind.title">Industrial & construction HSE teams.</h2>
+            </div>
+
+            <div class="ind-grid">
+                <div class="ind-tile">
+                    <svg class="ind-ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="7" y="3" width="10" height="18" rx="2" />
+                        <path d="M10 7h4" />
+                        <path d="M10 11h4" />
+                        <path d="M10 15h4" />
+                        <path d="M5 21h14" />
+                    </svg>
+                    <span data-i18n="ind.i1">Oil & Gas</span>
+                </div>
+                <div class="ind-tile">
+                    <svg class="ind-ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 21h18" />
+                        <rect x="5" y="9" width="6" height="12" />
+                        <rect x="13" y="5" width="6" height="16" />
+                        <path d="M5 13h6" />
+                        <path d="M13 9h6" />
+                        <path d="M13 13h6" />
+                        <path d="M13 17h6" />
+                    </svg>
+                    <span data-i18n="ind.i2">Construction</span>
+                </div>
+                <div class="ind-tile">
+                    <svg class="ind-ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
+                    </svg>
+                    <span data-i18n="ind.i3">Power & Energy</span>
+                </div>
+                <div class="ind-tile">
+                    <svg class="ind-ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 21V9l6-5 6 5v12" />
+                        <path d="M9 21v-7h6v7" />
+                        <path d="M3 21h18" />
+                        <path d="M17 21V13h4v8" />
+                    </svg>
+                    <span data-i18n="ind.i4">Manufacturing</span>
+                </div>
+                <div class="ind-tile">
+                    <svg class="ind-ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 21h18" />
+                        <path d="M5 21v-6h3v6" />
+                        <path d="M10 21v-9h4v9" />
+                        <path d="M16 21v-4h3v4" />
+                        <path d="M14 3l-1.5 4h-3L11 9l-2-2-3 3" />
+                    </svg>
+                    <span data-i18n="ind.i5">Mining</span>
+                </div>
+                <div class="ind-tile">
+                    <svg class="ind-ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="9" width="18" height="9" rx="1" />
+                        <path d="M7 9V6h10v3" />
+                        <path d="M7 13h2" />
+                        <path d="M11 13h2" />
+                        <path d="M15 13h2" />
+                        <path d="M3 18v3" />
+                        <path d="M21 18v3" />
+                    </svg>
+                    <span data-i18n="ind.i6">Infrastructure</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== CTA / DOWNLOAD =========================== -->
+    <section class="section cta-section" id="download">
+        <div class="cta-bg"></div>
+        <div class="container cta-inner">
+            <h2 data-i18n="cta.title">Bring Safety Digi to your site today.</h2>
+            <p data-i18n="cta.sub">Digitize paper checklists, capture photo evidence and turn 26 days of field data into
+                a clean monthly report — automatically.</p>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-light btn-lg">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                    </svg>
+                    <span><small data-i18n="cta.dl1">Download on the</small><strong>App Store</strong></span>
+                </a>
+                <a href="#" class="btn btn-light btn-lg">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M3.18 23.07c-.43-.27-.72-.78-.72-1.39V2.32c0-.61.29-1.12.72-1.39L13.95 12 3.18 23.07zM14.84 12.93l2.81 2.81-12.66 7.21 9.85-10.02zM18.56 8.06l3.32 1.88c.7.4.7 1.4 0 1.8l-3.34 1.9-3.13-3.18 3.15-3.4zM4.99.81l12.66 7.21-2.81 2.81L4.99.81z" />
+                    </svg>
+                    <span><small data-i18n="cta.dl2">Get it on</small><strong>Google Play</strong></span>
+                </a>
+            </div>
+
+            <div class="cta-foot">
+                <span data-i18n="cta.qr">Scan the QR code from your phone to install.</span>
+                <div class="qr" aria-hidden="true">
+                    <svg viewBox="0 0 100 100" width="100" height="100">
+                        <rect width="100" height="100" fill="white" />
+                        <g fill="black">
+                            <rect x="5" y="5" width="22" height="22" />
+                            <rect x="9" y="9" width="14" height="14" fill="white" />
+                            <rect x="13" y="13" width="6" height="6" />
+                            <rect x="73" y="5" width="22" height="22" />
+                            <rect x="77" y="9" width="14" height="14" fill="white" />
+                            <rect x="81" y="13" width="6" height="6" />
+                            <rect x="5" y="73" width="22" height="22" />
+                            <rect x="9" y="77" width="14" height="14" fill="white" />
+                            <rect x="13" y="81" width="6" height="6" />
+                            <rect x="32" y="5" width="4" height="4" />
+                            <rect x="40" y="5" width="4" height="4" />
+                            <rect x="48" y="5" width="4" height="4" />
+                            <rect x="56" y="5" width="4" height="4" />
+                            <rect x="36" y="13" width="4" height="4" />
+                            <rect x="44" y="13" width="4" height="4" />
+                            <rect x="52" y="13" width="4" height="4" />
+                            <rect x="60" y="13" width="4" height="4" />
+                            <rect x="32" y="21" width="4" height="4" />
+                            <rect x="44" y="21" width="4" height="4" />
+                            <rect x="52" y="21" width="4" height="4" />
+                            <rect x="5" y="32" width="4" height="4" />
+                            <rect x="13" y="32" width="4" height="4" />
+                            <rect x="21" y="32" width="4" height="4" />
+                            <rect x="29" y="32" width="4" height="4" />
+                            <rect x="37" y="32" width="4" height="4" />
+                            <rect x="45" y="32" width="4" height="4" />
+                            <rect x="53" y="32" width="4" height="4" />
+                            <rect x="61" y="32" width="4" height="4" />
+                            <rect x="69" y="32" width="4" height="4" />
+                            <rect x="77" y="32" width="4" height="4" />
+                            <rect x="85" y="32" width="4" height="4" />
+                            <rect x="93" y="32" width="4" height="4" />
+                            <rect x="9" y="40" width="4" height="4" />
+                            <rect x="17" y="40" width="4" height="4" />
+                            <rect x="33" y="40" width="4" height="4" />
+                            <rect x="41" y="40" width="4" height="4" />
+                            <rect x="49" y="40" width="4" height="4" />
+                            <rect x="57" y="40" width="4" height="4" />
+                            <rect x="65" y="40" width="4" height="4" />
+                            <rect x="81" y="40" width="4" height="4" />
+                            <rect x="89" y="40" width="4" height="4" />
+                            <rect x="5" y="48" width="4" height="4" />
+                            <rect x="21" y="48" width="4" height="4" />
+                            <rect x="29" y="48" width="4" height="4" />
+                            <rect x="37" y="48" width="4" height="4" />
+                            <rect x="45" y="48" width="4" height="4" />
+                            <rect x="61" y="48" width="4" height="4" />
+                            <rect x="69" y="48" width="4" height="4" />
+                            <rect x="77" y="48" width="4" height="4" />
+                            <rect x="85" y="48" width="4" height="4" />
+                            <rect x="93" y="48" width="4" height="4" />
+                            <rect x="13" y="56" width="4" height="4" />
+                            <rect x="29" y="56" width="4" height="4" />
+                            <rect x="37" y="56" width="4" height="4" />
+                            <rect x="53" y="56" width="4" height="4" />
+                            <rect x="65" y="56" width="4" height="4" />
+                            <rect x="73" y="56" width="4" height="4" />
+                            <rect x="81" y="56" width="4" height="4" />
+                            <rect x="9" y="64" width="4" height="4" />
+                            <rect x="21" y="64" width="4" height="4" />
+                            <rect x="33" y="64" width="4" height="4" />
+                            <rect x="45" y="64" width="4" height="4" />
+                            <rect x="53" y="64" width="4" height="4" />
+                            <rect x="61" y="64" width="4" height="4" />
+                            <rect x="69" y="64" width="4" height="4" />
+                            <rect x="85" y="64" width="4" height="4" />
+                            <rect x="93" y="64" width="4" height="4" />
+                            <rect x="32" y="73" width="4" height="4" />
+                            <rect x="40" y="73" width="4" height="4" />
+                            <rect x="48" y="73" width="4" height="4" />
+                            <rect x="56" y="73" width="4" height="4" />
+                            <rect x="64" y="73" width="4" height="4" />
+                            <rect x="72" y="73" width="4" height="4" />
+                            <rect x="80" y="73" width="4" height="4" />
+                            <rect x="88" y="73" width="4" height="4" />
+                            <rect x="36" y="81" width="4" height="4" />
+                            <rect x="44" y="81" width="4" height="4" />
+                            <rect x="52" y="81" width="4" height="4" />
+                            <rect x="60" y="81" width="4" height="4" />
+                            <rect x="68" y="81" width="4" height="4" />
+                            <rect x="84" y="81" width="4" height="4" />
+                            <rect x="92" y="81" width="4" height="4" />
+                            <rect x="32" y="89" width="4" height="4" />
+                            <rect x="44" y="89" width="4" height="4" />
+                            <rect x="56" y="89" width="4" height="4" />
+                            <rect x="64" y="89" width="4" height="4" />
+                            <rect x="72" y="89" width="4" height="4" />
+                            <rect x="80" y="89" width="4" height="4" />
+                            <rect x="88" y="89" width="4" height="4" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== FOOTER =========================== -->
+    <footer class="footer" id="contact">
+        <div class="container footer-inner">
+            <div class="f-col">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Safety Digi" class="logo-img" />
+                </div>
+                <p class="f-tag" data-i18n="footer.tag">Safer Today, Sustainable Tomorrow.</p>
+            </div>
+
+            <div class="f-col">
+                <h5 data-i18n="footer.product">Product</h5>
+                <a href="#pillars" data-i18n="nav.pillars">Pillars</a>
+                <a href="#modules" data-i18n="nav.modules">Modules</a>
+                <a href="#workflow" data-i18n="nav.workflow">Workflow</a>
+                <a href="#download" data-i18n="nav.download">Download</a>
+            </div>
+
+            <div class="f-col">
+                <h5 data-i18n="footer.company">Company</h5>
+                <a href="#" data-i18n="footer.about">About</a>
+                <a href="#" data-i18n="footer.contact">Contact</a>
+                <a href="#" data-i18n="footer.privacy">Privacy</a>
+                <a href="#" data-i18n="footer.terms">Terms</a>
+            </div>
+
+            <div class="f-col">
+                <h5 data-i18n="footer.contact">Contact</h5>
+                <a href="mailto:hello@safetydigi.app">hello@safetydigi.app</a>
+                <span class="f-mute" data-i18n="footer.region">MENA · Global</span>
+                <div class="f-social">
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="X">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M18.244 2H21l-6.52 7.45L22 22h-6.78l-4.69-6.13L4.8 22H2.04l7.01-8L1.6 2h6.91l4.24 5.6L18.244 2zm-2.38 18h1.86L7.26 4H5.3l10.564 16z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <span data-i18n="footer.copy">© 2026 Safety Digi. All rights reserved.</span>
+            <span data-i18n="footer.disclaimer">For professional HSE use on industrial & construction sites.</span>
+        </div>
+    </footer>
+
+    <script type="module" src="/app.js"></script>
+</body>
+
+</html>
