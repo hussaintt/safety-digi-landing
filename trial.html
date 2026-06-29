@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#16B39A" />
+    <title>Request 30-Day Free Trial | Safety Digi</title>
+    <meta name="description" content="Start your 30-day free trial of Safety Digi EHS software. Access observations, inspections, permits, and incident reports with no credit card required." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="icon" href="favicon/favicon.ico" sizes="any" />
+</head>
+
+<body class="trial-page-body">
+
+    <!-- =========================== NAVBAR =========================== -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo" aria-label="Safety Digi">
+                <span class="logo-mark">
+                    <img src="favicon/favicon.svg" alt="" width="42" height="42" />
+                </span>
+                <span class="logo-text">
+                    <span data-i18n="logo.text"><strong>Safety</strong><span>Digi</span></span>
+                    <small class="logo-sub" data-i18n="logo.sub">SAFETY · COMPLIANCE · CARE</small>
+                </span>
+            </a>
+
+            <div class="nav-actions">
+                <a href="index.html" class="btn btn-outline btn-sm" data-i18n="nav.home">Home</a>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-active">EN</span>
+                    <span class="lang-divider">/</span>
+                    <span class="lang-other">AR</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================== MAIN TRIAL SECTION =========================== -->
+    <main class="trial-main">
+        <div class="container trial-grid">
+            
+            <!-- Left Column: Card & Form -->
+            <div class="trial-card-container">
+                <div class="trial-card">
+                    <h2 data-i18n="trial.title">Request a free trial</h2>
+                    <p class="trial-subtext" data-i18n="trial.subtext">Access all the features for 30 days. No credit card needed.</p>
+                    
+                    <form id="trialForm" class="trial-form">
+                        <!-- Custom Error Box -->
+                        <div id="trialError" class="trial-error-message" style="display: none;"></div>
+
+                        <div class="form-group">
+                            <input type="text" id="fullName" name="name" required placeholder=" " />
+                            <label for="fullName" data-i18n="trial.namePlace">Full name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="workEmail" name="email" required placeholder=" " />
+                            <label for="workEmail" data-i18n="trial.emailPlace">Work email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="city" name="city" required placeholder=" " />
+                            <label for="city" data-i18n="trial.cityPlace">City</label>
+                        </div>
+                        
+                        <div class="form-group phone-group">
+                            <div class="phone-input-wrapper">
+                                <select id="countryCode" name="countryCode" aria-label="Country Code">
+                                    <option value="+20">🇪🇬 +20</option>
+                                    <option value="+966">🇸🇦 +966</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                    <option value="+965">🇰🇼 +965</option>
+                                    <option value="+973">🇧🇭 +973</option>
+                                    <option value="+968">🇴🇲 +968</option>
+                                    <option value="+964">🇮🇶 +964</option>
+                                    <option value="+962">🇯🇴 +962</option>
+                                    <option value="+961">🇱🇧 +961</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                </select>
+                                <input type="tel" id="phone" name="phone" required placeholder=" " />
+                                <label for="phone" class="phone-label" data-i18n="trial.phonePlace">Phone</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="btn btn-primary btn-lg btn-block">
+                            <span id="btnText" data-i18n="trial.next">Submit Request</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Column: Info details -->
+            <div class="trial-info-container">
+                <h1 data-i18n="trial.h1">Start a 30-day free trial of Safety Digi EHS Software.</h1>
+                <p class="trial-info-subhead" data-i18n="trial.h2">No credit card. No obligation.</p>
+                
+                <div class="trial-includes">
+                    <h3 data-i18n="trial.incTitle">The free trial includes:</h3>
+                    <ul>
+                        <li data-i18n="trial.inc1">Access to one or more core modules: Incident and Observation Management, Permit to Work, and Inspection Management</li>
+                        <li data-i18n="trial.inc2">A 30-day trial period, with extensions available on request</li>
+                        <li data-i18n="trial.inc3">Unlimited users and unrestricted usage during the trial</li>
+                        <li data-i18n="trial.inc4">A fully cloud-based platform with no software installation required</li>
+                        <li data-i18n="trial.inc5">Full access to mobile apps on both Android and iOS</li>
+                        <li data-i18n="trial.inc6">Dedicated Safety Digi support to help set up the account, configure workflows, and digitize permit or inspection checklists</li>
+                    </ul>
+                </div>
+                
+                <div class="trial-note-box">
+                    <p data-i18n="trial.note"><strong>Note:</strong> The form accepts only company or business email addresses. Personal email IDs such as Gmail, Yahoo, or Outlook are not supported.</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- =========================== SUCCESS MODAL =========================== -->
+    <div id="successModal" class="trial-modal-overlay" style="display: none;">
+        <div class="trial-modal">
+            <div class="trial-modal-check">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                </svg>
+            </div>
+            <h3 data-i18n="trial.successHeader">Thank You!</h3>
+            <p data-i18n="trial.successBody">Your request has been submitted successfully. We will email you your account details shortly.</p>
+            <a href="index.html" class="btn btn-primary" data-i18n="trial.successClose">Back to Home</a>
+        </div>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+</body>
+
+</html>

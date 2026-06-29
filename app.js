@@ -224,7 +224,30 @@
             'modules.m2.c5': 'Fire',
             'modules.m2.c6': 'SMS Audit <small>(Phase 2)</small>',
             'logo.text': '<strong>Safety</strong><span>Digi</span>',
-            'logo.sub': 'SAFETY · COMPLIANCE · CARE'
+            'logo.sub': 'SAFETY · COMPLIANCE · CARE',
+            'trial.title': 'Request a free trial',
+            'trial.subtext': 'Access all the features for 30 days. No credit card needed.',
+            'trial.namePlace': 'Full name',
+            'trial.emailPlace': 'Work email',
+            'trial.cityPlace': 'City',
+            'trial.phonePlace': 'Phone',
+            'trial.next': 'Submit Request',
+            'trial.loading': 'Submitting...',
+            'trial.h1': 'Start a 30-day free trial of Safety Digi EHS Software.',
+            'trial.h2': 'No credit card. No obligation.',
+            'trial.incTitle': 'The free trial includes:',
+            'trial.inc1': 'Access to one or more core modules: Incident and Observation Management, Permit to Work, and Inspection Management',
+            'trial.inc2': 'A 30-day trial period, with extensions available on request',
+            'trial.inc3': 'Unlimited users and unrestricted usage during the trial',
+            'trial.inc4': 'A fully cloud-based platform with no software installation required',
+            'trial.inc5': 'Full access to mobile apps on both Android and iOS',
+            'trial.inc6': 'Dedicated Safety Digi support to help set up the account, configure workflows, and digitize permit or inspection checklists',
+            'trial.note': '<strong>Note:</strong> The form accepts only company or business email addresses. Personal email IDs such as Gmail, Yahoo, or Outlook are not supported.',
+            'trial.errorPersonal': 'Please use your company or business email address. Personal emails are not allowed.',
+            'trial.errorFields': 'Please fill in all fields correctly.',
+            'trial.successHeader': 'Thank You!',
+            'trial.successBody': 'Your request has been submitted successfully. We will email you your account details shortly.',
+            'trial.successClose': 'Back to Home'
         },
 
         ar: {
@@ -441,7 +464,30 @@
             'modules.m2.c5': 'الحريق',
             'modules.m2.c6': 'تدقيق نظام الإدارة <small>(المرحلة 2)</small>',
             'logo.text': '<strong>سيفتي</strong><span>ديجي</span>',
-            'logo.sub': 'سلامة · امتثال · رعاية'
+            'logo.sub': 'سلامة · امتثال · رعاية',
+            'trial.title': 'طلب تجربة مجانية',
+            'trial.subtext': 'الوصول إلى جميع الميزات لمدة 30 يومًا. لا حاجة لبطاقة ائتمان.',
+            'trial.namePlace': 'الاسم الكامل',
+            'trial.emailPlace': 'بريد العمل الإلكتروني',
+            'trial.cityPlace': 'المدينة',
+            'trial.phonePlace': 'الهاتف',
+            'trial.next': 'إرسال الطلب',
+            'trial.loading': 'جاري الإرسال...',
+            'trial.h1': 'ابدأ تجربة مجانية لمدة 30 يومًا لبرنامج سيفتي ديجي لإدارة السلامة.',
+            'trial.h2': 'لا حاجة لبطاقة ائتمان. بدون التزامات.',
+            'trial.incTitle': 'التجربة المجانية تشمل:',
+            'trial.inc1': 'الوصول إلى وحدة واحدة أو أكثر من الوحدات الأساسية: إدارة الحوادث والملاحظات، تصاريح العمل، وإدارة التفتيش',
+            'trial.inc2': 'فترة تجربة لمدة 30 يومًا، مع إمكانية التمديد عند الطلب',
+            'trial.inc3': 'مستخدمين غير محدودين واستخدام غير مقيد أثناء فترة التجربة',
+            'trial.inc4': 'منصة سحابية بالكامل لا تتطلب أي تثبيت للبرامج',
+            'trial.inc5': 'الوصول الكامل إلى تطبيقات الهاتف المحمول على كل من نظامي أندرويد و iOS',
+            'trial.inc6': 'دعم مخصص من سيفتي ديجي للمساعدة في إعداد الحساب، وتهيئة سير العمل، وتحويل قوائم التفتيش إلى رقمية',
+            'trial.note': '<strong>ملاحظة:</strong> يقبل النموذج عناوين البريد الإلكتروني للشركات أو الأعمال فقط. عناوين البريد الشخصية مثل Gmail أو Yahoo أو Outlook غير مدعومة.',
+            'trial.errorPersonal': 'يرجى استخدام البريد الإلكتروني للشركة أو العمل. غير مسموح بالبريد الشخصي.',
+            'trial.errorFields': 'يرجى ملء جميع الحقول بشكل صحيح.',
+            'trial.successHeader': 'شكرًا لك!',
+            'trial.successBody': 'تم إرسال طلبك بنجاح. سنرسل إليك تفاصيل حسابك عبر البريد الإلكتروني قريبًا.',
+            'trial.successClose': 'العودة للرئيسية'
         }
     };
 
@@ -587,6 +633,103 @@
             else el.textContent = target;
         }
         requestAnimationFrame(tick);
+    }
+
+    /* ---------------- Trial Form Handler ---------------- */
+    const trialForm = document.getElementById('trialForm');
+    const trialError = document.getElementById('trialError');
+    const successModal = document.getElementById('successModal');
+    const submitBtn = document.getElementById('submitBtn');
+    const btnText = document.getElementById('btnText');
+
+    if (trialForm) {
+        const personalDomains = [
+            'gmail.com', 'yahoo.com', 'outlook.com', 'hotmail.com',
+            'icloud.com', 'aol.com', 'zoho.com', 'yandex.com',
+            'mail.com', 'gmx.com', 'protonmail.com', 'proton.me',
+            'live.com', 'msn.com', 'hotmail.co.uk', 'yahoo.co.uk',
+            'yahoo.fr', 'yahoo.de', 'wanadoo.fr', 'orange.fr',
+            'comcast.net', 'sbcglobal.net', 'charter.net', 'verizon.net'
+        ];
+
+        function isBusinessEmail(email) {
+            const parts = email.split('@');
+            if (parts.length < 2) return false;
+            const domain = parts[1].toLowerCase().trim();
+            return !personalDomains.includes(domain);
+        }
+
+        trialForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            trialError.style.display = 'none';
+            trialError.textContent = '';
+
+            const name = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('workEmail').value.trim();
+            const city = document.getElementById('city').value.trim();
+            const countryCode = document.getElementById('countryCode').value;
+            const phoneVal = document.getElementById('phone').value.trim();
+            const fullPhone = `${countryCode} ${phoneVal}`;
+
+            // 1. Basic empty validations
+            if (!name || !email || !city || !phoneVal) {
+                const errKey = 'trial.errorFields';
+                trialError.textContent = I18N[currentLang][errKey] || 'Please fill in all fields correctly.';
+                trialError.style.display = 'block';
+                return;
+            }
+
+            // 2. Business Email Validation
+            if (!isBusinessEmail(email)) {
+                const errKey = 'trial.errorPersonal';
+                trialError.textContent = I18N[currentLang][errKey] || 'Please use your company or business email address. Personal emails are not allowed.';
+                trialError.style.display = 'block';
+                return;
+            }
+
+            // 3. Submit Form Data
+            try {
+                // Disable button and show loading text
+                submitBtn.disabled = true;
+                const loadKey = 'trial.loading';
+                btnText.textContent = I18N[currentLang][loadKey] || 'Submitting...';
+
+                // Send details to hussaintarekproject@gmail.com via FormSubmit ajax API
+                const response = await fetch('https://formsubmit.co/ajax/hussaintarekproject@gmail.com', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        city: city,
+                        phone: fullPhone,
+                        _subject: 'New Safety Digi 30-Day Free Trial Request'
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (response.ok && (result.success === 'true' || result.success === true)) {
+                    // Show success modal
+                    successModal.style.display = 'flex';
+                    trialForm.reset();
+                } else {
+                    throw new Error(result.message || 'Form submission failed');
+                }
+            } catch (err) {
+                console.error(err);
+                trialError.textContent = currentLang === 'ar' 
+                    ? 'حدث خطأ أثناء إرسال طلبك. يرجى المحاولة مرة أخرى لاحقًا.' 
+                    : 'An error occurred while submitting your request. Please try again later.';
+                trialError.style.display = 'block';
+            } finally {
+                submitBtn.disabled = false;
+                btnText.textContent = I18N[currentLang]['trial.next'] || 'Submit Request';
+            }
+        });
     }
 
     /* ---------------- Init ---------------- */

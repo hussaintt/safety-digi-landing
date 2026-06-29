@@ -2245,3 +2245,362 @@ html[dir="rtl"] .cta-buttons .btn-light span {
         transform: translateY(-8px);
     }
 }
+
+/* ==========================================================
+   Trial Page Styles
+   ========================================================== */
+.trial-page-body {
+    background: var(--bg);
+}
+
+.trial-main {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.trial-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Form Card Left side */
+.trial-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.trial-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border);
+    width: 100%;
+    max-width: 480px;
+}
+
+.trial-card h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--ink);
+    margin: 0 0 8px;
+    letter-spacing: -0.015em;
+}
+
+.trial-subtext {
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+/* Floating labels and input elements */
+.trial-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 20px 16px 8px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--white);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--green-500);
+    box-shadow: 0 0 0 4px rgba(22, 179, 154, 0.15);
+}
+
+.form-group label {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: var(--gray);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+/* Floating Label Animation */
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label {
+    top: 12px;
+    font-size: 11px;
+    color: var(--green-600);
+    font-weight: 700;
+}
+
+/* Phone Input Custom Layout */
+.phone-input-wrapper {
+    position: relative;
+    display: flex;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    align-items: stretch;
+}
+
+.phone-input-wrapper:has(input:focus) {
+    border-color: var(--green-500);
+    box-shadow: 0 0 0 4px rgba(22, 179, 154, 0.15);
+}
+
+.phone-input-wrapper select {
+    border: none;
+    background: #f3f4f6;
+    padding: 0 12px;
+    border-right: 1.5px solid var(--border);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    cursor: pointer;
+}
+
+.phone-input-wrapper input {
+    border: none;
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 20px 16px 8px;
+    width: 100%;
+}
+
+.phone-input-wrapper .phone-label {
+    left: 105px;
+}
+
+.phone-input-wrapper input:focus ~ .phone-label,
+.phone-input-wrapper input:not(:placeholder-shown) ~ .phone-label {
+    top: 12px;
+    font-size: 11px;
+    color: var(--green-600);
+    font-weight: 700;
+}
+
+/* Error States */
+.trial-error-message {
+    background: var(--red-bg);
+    color: var(--red-500);
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    line-height: 1.4;
+}
+
+/* RTL Form Labels Support */
+html[dir="rtl"] .form-group label {
+    left: auto;
+    right: 16px;
+}
+
+html[dir="rtl"] .phone-input-wrapper select {
+    border-right: none;
+    border-left: 1.5px solid var(--border);
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+html[dir="rtl"] .phone-input-wrapper input {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+html[dir="rtl"] .phone-input-wrapper .phone-label {
+    right: 105px;
+    left: auto;
+}
+
+/* Right Column: Info Details */
+.trial-info-container h1 {
+    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--ink);
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+}
+
+.trial-info-container h1 span {
+    color: var(--green-500);
+}
+
+.trial-info-subhead {
+    font-size: 18px;
+    color: var(--gray);
+    margin-bottom: 36px;
+    line-height: 1.4;
+}
+
+.trial-includes h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+.trial-includes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.trial-includes li {
+    position: relative;
+    padding-left: 28px;
+    color: var(--slate-700);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+html[dir="rtl"] .trial-includes li {
+    padding-left: 0;
+    padding-right: 28px;
+}
+
+.trial-includes li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--green-500);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+html[dir="rtl"] .trial-includes li::before {
+    left: auto;
+    right: 0;
+}
+
+.trial-note-box {
+    margin-top: 36px;
+    padding: 16px 20px;
+    background: #f8fafc;
+    border-left: 4px solid #94a3b8;
+    border-radius: 0 8px 8px 0;
+}
+
+html[dir="rtl"] .trial-note-box {
+    border-left: none;
+    border-right: 4px solid #94a3b8;
+    border-radius: 8px 0 0 8px;
+}
+
+.trial-note-box p {
+    font-size: 13.5px;
+    color: var(--gray);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* success modal popup overlay */
+.trial-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.trial-modal {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: var(--shadow-float);
+    animation: fadeUp 0.4s var(--ease) both;
+}
+
+.trial-modal-check {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--mint-bg);
+    color: var(--green-600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.trial-modal h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--ink);
+    margin: 0 0 10px;
+}
+
+.trial-modal p {
+    font-size: 14.5px;
+    color: var(--gray);
+    margin: 0 0 28px;
+    line-height: 1.5;
+}
+
+.trial-modal .btn {
+    width: 100%;
+}
+
+/* Responsive grid layouts */
+@media (max-width: 900px) {
+    .trial-main {
+        padding: 100px 0 60px;
+    }
+    
+    .trial-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    
+    .trial-card-container {
+        order: 2;
+    }
+    
+    .trial-info-container {
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .trial-card {
+        padding: 30px 20px;
+    }
+}
+
